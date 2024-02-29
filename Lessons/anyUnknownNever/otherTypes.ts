@@ -47,4 +47,4 @@ function throwFormattedError(message:string): never {
     throw new Error(`Something went wrong: ${message}`);
 }
 
-// setting it as never type because we know it will never be thrown
+// setting it as never type because we know it will never return values at any normal circumstances
