@@ -34,3 +34,24 @@ interface CountryLanguages extends Country, CountryWtCurrency {
     languages:string
 }
 // an interface can also extends 2 other interfaces
+
+// however if we define an interface for the second time it will be extended automatically maintaining the same name:
+
+interface Address {
+    fullname:string;
+    streetname:string;
+    number:number;
+    city:string;
+}
+
+interface Address {
+    zipCode:number;
+    province:string;
+    country:string;
+    code:string
+}
+
+// look at the error to show required properties
+const address:Address = {
+
+}
