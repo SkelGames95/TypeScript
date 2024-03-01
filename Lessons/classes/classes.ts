@@ -39,4 +39,40 @@ console.log(nigeria);
 
 console.log(description);
 
-// from here we can also create other instances of the Class
+console.log("-----------------------------------------------------")
+
+// from here we can also create other instances of the Class or extend the class created:
+
+class CountryWithCurrency extends Country {
+
+    currency:Currency;
+
+    constructor(name:string, code:string, currency:Currency) {
+        super(name, code);      // super call the parameters from the parent class
+        this.currency = currency;
+    }
+}
+
+
+interface Currency {
+    name:string;
+    code:string;
+    symbol:string;
+}
+
+const columbiaCurrency:Currency = {
+    name: "Columbian Peso",
+    code: "COP",
+    symbol: "$"
+};
+
+const columbia = new CountryWithCurrency("Columbia", "CO", columbiaCurrency);
+
+
+columbia.addLanguage("Spanish");
+columbia.addLanguage("English");
+
+console.log(columbia);
+
+const columbiaLanguages = columbia.describeLanguages();
+console.log(columbiaLanguages);
