@@ -11,9 +11,9 @@ const country: { code:string; population:number; } = {
 // 2 - Interfaces:
 
 interface Country {
-    name:string;
+    readonly name:string;       // this is a readonly property. It can't be modified after 
     code:string;
-    population:number;
+    population?:number;         // this is an optional property
 }
 
 const country2:Country = {
