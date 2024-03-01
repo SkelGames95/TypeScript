@@ -14,7 +14,7 @@ const arr:Array<Tuple> = [
     ["China", 1_412_600_000],
     ["Italy", 60_000_000],
     ["Narnia", 256]
-]
+];
 
 // to access those elements:
 console.log(arr[2][1]);
