@@ -1,4 +1,4 @@
-// some shortcuts to use special types faster: PARTIAL, REQUIRED, READONLY
+// some shortcuts to use properties faster: PARTIAL, REQUIRED, READONLY
 
 // PARTIAL TYPE
 

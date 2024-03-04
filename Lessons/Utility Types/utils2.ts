@@ -1,7 +1,4 @@
-// some shortcuts to use special types faster: PICK & OMIT
-
-// PARTIAL TYPE
-
+// some shortcuts to use properties faster: PICK & OMIT
 interface Country {
     name:string;
     code:string;
